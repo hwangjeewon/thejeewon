@@ -1,0 +1,149 @@
+/* =============================================================================
+   @thejeewon Design Tokens
+   Source: design-system.md
+   ============================================================================= */
+
+:root {
+  /* ---------------------------------------------------------------------------
+     Color Tokens
+     --------------------------------------------------------------------------- */
+
+  --color-primary:       #E65787;
+  --color-primary-rgb:   230, 87, 135;
+  --color-black:         #1C1C21;
+  --color-gray:          #6B6B76;
+  --color-light-gray:    #9B9BA5;
+  --color-off-white:     #FAFAFA;
+  --color-white:         #F8F9FA;
+  --color-bg:            #F5F5F5;
+  --color-stroke:        #E8E8ED;
+  --color-green:         #34A853;
+  --color-red:           #EA4335;
+  --color-dim:           rgba(22, 22, 22, 0.8);
+
+  /* Primary tints */
+  --color-primary-bg:    rgba(230, 87, 135, 0.15);
+  --color-primary-fill:  rgba(230, 87, 135, 0.25);
+
+  /* Time block */
+  --color-timeblock-bg:  rgba(254, 215, 170, 0.9);
+  --color-timeblock-border: #F97316;
+  --color-timeblock-text:   #7C2D12;
+
+  /* ---------------------------------------------------------------------------
+     Font Size Tokens
+     --------------------------------------------------------------------------- */
+
+  --text-9:  9px;
+  --text-10: 10px;
+  --text-11: 11px;
+  --text-12: 12px;
+  --text-13: 13px;
+  --text-14: 14px;
+  --text-15: 15px;
+  --text-16: 16px;
+  --text-20: 20px;
+  --text-26: 26px;
+  --text-32: 32px;
+  --text-42: 42px;
+
+  /* ---------------------------------------------------------------------------
+     Font Weight Tokens
+     --------------------------------------------------------------------------- */
+
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+
+  /* ---------------------------------------------------------------------------
+     Spacing Tokens
+     --------------------------------------------------------------------------- */
+
+  --space-2:   2px;
+  --space-4:   4px;
+  --space-5:   5px;
+  --space-7:   7px;
+  --space-8:   8px;
+  --space-9:   9px;
+  --space-10:  10px;
+  --space-12:  12px;
+  --space-14:  14px;
+  --space-15:  15px;
+  --space-16:  16px;
+  --space-19:  19px;
+  --space-20:  20px;
+  --space-22:  22px;
+  --space-24:  24px;
+  --space-26:  26px;
+  --space-28:  28px;
+  --space-30:  30px;
+  --space-32:  32px;
+  --space-34:  34px;
+  --space-37:  37px;
+  --space-40:  40px;
+  --space-45:  45px;
+  --space-47:  47px;
+  --space-60:  60px;
+
+  /* Layout */
+  --layout-frame-w:    1440px;
+  --layout-frame-h:    900px;
+  --layout-gnb-w:      240px;
+  --layout-content-w:  1200px;
+  --size-page-w:       1081px; /* Weight / Workout 페이지 내부 콘텐츠 너비 */
+  --layout-content-left: 300px;
+  --layout-content-top:  32px;
+
+  /* Component sizes */
+  --size-nav-h:        49px;
+  --size-nav-bar-w:    4px;
+  --size-stat-w:       345px;
+  --size-chart-w:      714px;
+  --size-chart-h:      340px;
+  --size-table-w:      345px;
+  --size-table-h:      340px;
+  --size-toggle-w:     64px;
+  --size-toggle-h:     29px;
+  --size-input-h:      48px;
+  --size-btn-h:        48px;
+  --size-modal-inner-w: 323px;
+  --size-login-card-w: 400px;
+  --size-login-card-h: 400px;
+  --size-login-inner-w: 320px;
+  --size-timetable-w:  1080px;
+  --size-timetable-h:  680px;
+  --size-timeblock-w:  182px;
+  --size-timeblock-h:  168px;
+  --size-close-btn:    28px;
+  --size-logo-h:       64px;
+
+  /* ---------------------------------------------------------------------------
+     Border Radius Tokens
+     --------------------------------------------------------------------------- */
+
+  --radius-card:   12px;
+  --radius-modal:  12px;
+  --radius-cta:    12px;
+  --radius-sm:     4px;
+  --radius-bar:    5px;
+  --radius-row:    7px;
+  --radius-nav-br: 7px; /* nav active: border-bottom-right + border-top-right only */
+
+  /* ---------------------------------------------------------------------------
+     Effects
+     --------------------------------------------------------------------------- */
+
+  --shadow-modal:
+    0 0 0 1px rgba(84, 72, 49, 0.10),
+    0 4px 12px -1px rgba(0, 0, 0, 0.12),
+    0 20px 48px -8px rgba(17, 17, 17, 0.24);
+
+  /* ---------------------------------------------------------------------------
+     Transition Tokens
+     --------------------------------------------------------------------------- */
+
+  --transition-colors: color 200ms ease, background-color 200ms ease,
+                       border-color 200ms ease, fill 200ms ease;
+  --transition-border: border-color 200ms ease;
+}

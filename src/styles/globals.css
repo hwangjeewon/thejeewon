@@ -1,0 +1,119 @@
+/* =============================================================================
+   @thejeewon Global Styles
+   Source: design-system.md
+   ============================================================================= */
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
+@import './tokens.css';
+
+/* ---------------------------------------------------------------------------
+   Reset
+   --------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  font-size: var(--text-14);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  background-color: var(--color-bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------
+   Interaction Rules (design-system.md §8)
+   --------------------------------------------------------------------------- */
+
+/* 버튼 / 행 hover: transition-colors duration-200 */
+button,
+[role='button'],
+tr,
+.row {
+  transition: var(--transition-colors);
+}
+
+/* Input focus: border-[#E65787] */
+input,
+textarea,
+select {
+  transition: var(--transition-border);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-primary);
+}
+
+/* 활성 nav 전환: transition-colors */
+nav a,
+nav button {
+  transition: var(--transition-colors);
+}
+
+/* ---------------------------------------------------------------------------
+   Custom Scrollbar Utility
+   --------------------------------------------------------------------------- */
+
+.custom-scrollbar {
+  scrollbar-width: thin !important;
+  scrollbar-color: #9B9BA5 transparent !important;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px !important;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #9B9BA5 !important;
+  border-radius: 9999px !important;
+}

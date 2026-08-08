@@ -1,0 +1,70 @@
+@import '../styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================================================================
+   Global styles — see src/styles/globals.css for full reset & base rules
+   ============================================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  font-size: var(--text-14);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  background-color: var(--color-bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, textarea, select, button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol { list-style: none; }
+a { color: inherit; text-decoration: none; }
+
+/* ---------------------------------------------------------------------------
+   Custom Scrollbar Utility
+   --------------------------------------------------------------------------- */
+
+.custom-scrollbar {
+  scrollbar-width: thin !important;
+  scrollbar-color: #9B9BA5 transparent !important;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px !important;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #9B9BA5 !important;
+  border-radius: 9999px !important;
+}
