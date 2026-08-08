@@ -1,8 +1,6 @@
 'use client'
 
 import { useState, useEffect, useMemo, useRef } from 'react'
-import { StickyNotesSidebar } from '@/components/StickyNotesSidebar'
-
 // ─────────────────────────────────────────────────────────────
 // Types
 // ─────────────────────────────────────────────────────────────
@@ -585,7 +583,6 @@ export default function SchoolPage() {
         </div>
       )}
     </div>
-      <StickyNotesSidebar storageKey="sticky_notes_school" />
     </>
   )
 }
