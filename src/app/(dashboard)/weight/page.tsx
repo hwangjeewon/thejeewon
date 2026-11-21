@@ -490,8 +490,8 @@ export default function WeightPage() {
                   tickMargin={10}
                   axisLine={false}
                   tickLine={false}
-                  domain={[40, 46]}
-                  ticks={[40, 41, 42, 43, 44, 45, 46]}
+                  domain={[40, 47]}
+                  ticks={[40, 41, 42, 43, 44, 45, 46, 47]}
                   allowDecimals={false}
                   width={55}
                 />
