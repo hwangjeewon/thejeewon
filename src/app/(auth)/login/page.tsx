@@ -69,7 +69,7 @@ export default function LoginPage() {
               className="text-center"
               style={{ fontSize: 'var(--text-14)', color: 'var(--color-gray)' }}
             >
-              Dear diary, I love my life.
+              Dear diary, I love my life
             </span>
           </div>
 
