@@ -33,15 +33,6 @@ function PencilIcon({ size = 24, style }: { size?: number; style?: React.CSSProp
   )
 }
 
-function TrendingUpIcon({ size = 24, style }: { size?: number; style?: React.CSSProperties }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" style={style}>
-      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-      <polyline points="17 6 23 6 23 12" />
-    </svg>
-  )
-}
-
 function StopwatchIcon({ size = 24, style }: { size?: number; style?: React.CSSProperties }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" style={style}>
@@ -67,7 +58,6 @@ const TOP_NAV: NavItem[] = [
   { label: 'Weight',    href: '/weight',    Icon: TargetIcon },
   { label: 'Workout',   href: '/workout',   Icon: ActivityIcon },
   { label: 'School',    href: '/school',    Icon: PencilIcon },
-  { label: 'Stocks',    href: '/stocks',    Icon: TrendingUpIcon },
   { label: 'Stopwatch', href: '/stopwatch', Icon: StopwatchIcon },
 ]
 
