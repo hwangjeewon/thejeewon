@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { Settings } from 'lucide-react'
 
 // ─── Custom SVG Icons ─────────────────────────────────────────────────────────
 
@@ -59,10 +58,6 @@ const TOP_NAV: NavItem[] = [
   { label: 'Workout',   href: '/workout',   Icon: ActivityIcon },
   { label: 'School',    href: '/school',    Icon: PencilIcon },
   { label: 'Stopwatch', href: '/stopwatch', Icon: StopwatchIcon },
-]
-
-const BOTTOM_NAV: NavItem[] = [
-  { label: 'Settings', href: '/settings', Icon: Settings as IconComponent },
 ]
 
 // ─── NavLink ──────────────────────────────────────────────────────────────────
@@ -159,13 +154,6 @@ export function Gnb() {
       >
         <div className="flex flex-col">
           {TOP_NAV.map((item) => (
-            <NavLink key={item.href} {...item} />
-          ))}
-        </div>
-
-        {/* ── Bottom Nav (Settings) ── */}
-        <div className="mt-auto" style={{ paddingBottom: 'var(--space-60)' }}>
-          {BOTTOM_NAV.map((item) => (
             <NavLink key={item.href} {...item} />
           ))}
         </div>
