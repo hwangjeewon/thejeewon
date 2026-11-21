@@ -212,7 +212,7 @@ export default function StopwatchPage() {
             Stopwatch
           </h1>
           <p style={{ fontSize: 'var(--text-15)', color: 'var(--color-gray)' }}>
-            Time to lock in.
+            Time to lock in
           </p>
         </div>
 

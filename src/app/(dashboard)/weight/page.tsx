@@ -336,7 +336,7 @@ export default function WeightPage() {
           Weight Dashboard
         </h1>
         <p style={{ fontSize: 'var(--text-15)', color: 'var(--color-gray)' }}>
-          You are what you eat.
+          You are what you eat
         </p>
       </div>
 

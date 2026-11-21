@@ -261,7 +261,7 @@ export default function SchoolPage() {
             School Dashboard
           </h1>
           <p style={{ fontSize: 'var(--text-15)', color: 'var(--color-gray)' }}>
-            Last one, best one.
+            Last one, best one
           </p>
         </div>
 

@@ -370,7 +370,7 @@ export default function WorkoutPage() {
           Workout Dashboard
         </h1>
         <p style={{ fontSize: 'var(--text-15)', color: 'var(--color-gray)' }}>
-          Rizz through discipline.
+          Rizz through discipline
         </p>
       </div>
 
